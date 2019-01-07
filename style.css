@@ -76,8 +76,14 @@ li a {
 	display: block;
 }
 @media screen and (max-width: 1071px) {
+	body {
+		width: 90%;
+		margin-left: 5%;
+	}
 	header { 
-		height: 50px; 
+		width: 89.98%;
+		height: 50px;
+		z-index: 1;
 		}
 	.header-icon {
 		height: 39px;
@@ -86,14 +92,16 @@ li a {
 	.header-element {
 		 height: 50px;
 		 font-size: 40;
-		 width: 150px;
+		 width: 110px;
 		 top: -4px;
 		 line-height: 51px;
 		}
 	.header-dropdown {
+		z-index: -1;
 		top: 47px;
 		height: 53px;
-		width: 154.5px;
+		width: 139.5px;
+		border-top: 6px solid #fafafa;
 	}
 }
 article {
@@ -121,7 +129,7 @@ p {
 	margin-top: 0.25em;
 	margin-bottom: 0;
 }
-article a { /*oh god he's using !important*/
+article a {
 	color: #33c !important;
 	text-decoration: underline !important;
 }
