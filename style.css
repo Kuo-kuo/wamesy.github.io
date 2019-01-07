@@ -75,6 +75,9 @@ li a {
 .header-element:hover > .header-dropdown {
 	display: block;
 }
+.mobile {
+	display: none;
+}
 @media screen and (max-width: 1071px) {
 	body {
 		width: 90%;
@@ -97,11 +100,13 @@ li a {
 		 line-height: 51px;
 		}
 	.header-dropdown {
-		z-index: -1;
-		top: 47px;
-		height: 53px;
-		width: 139.5px;
-		border-top: 6px solid #fafafa;
+		display: none;
+	}
+	.header-element:hover > .header-dropdown {
+		display: none;
+	}
+	.mobile {
+		display: inline;
 	}
 }
 article {
